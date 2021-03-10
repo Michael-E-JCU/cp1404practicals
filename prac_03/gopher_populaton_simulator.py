@@ -47,7 +47,7 @@ def random_gopher_births(population):
 
 
 def calculate_year(population):
-    if population > 3:
+    if population > 0:
         return False
     return True
 

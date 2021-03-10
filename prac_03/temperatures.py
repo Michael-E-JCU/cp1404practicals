@@ -12,7 +12,7 @@ print(MENU)
 def main():
     print(MENU)
     choice = input(">>> ").upper()
-    while choice != "Q":
+    while choice != "Q":  # Determines choice, converting float version of X into X
         if choice == "C":
             celsius = float(input("Celsius: "))
             fahrenheit = convert_celsius_to_fahrenheit(celsius)
