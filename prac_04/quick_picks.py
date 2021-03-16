@@ -9,7 +9,9 @@ def main():
     number_of_picks = int(input("How many quick picks? "))
     LISTS = [generate_list_of_6() for i in range(number_of_picks)]
     for number_list in LISTS:
-        print()
+        for i in number_list:
+            print(f"{i:2}", end=" ")
+        print("")
 
 
 def generate_list_of_6():
