@@ -6,22 +6,20 @@ import random
 
 
 def main():
-    score = float(input("Enter score: "))
-    result = determine_result(score)
-    print(result)
-    random_result = generate_random_result()
-    print(f"Random result: {random_result}")
+        score = float(input("Enter score: "))
+        result = determine_result(score)
+        print(result)
+        random_result = generate_random_result()
+        print(f"Random result: {random_result}")
 
 
 def determine_result(score):
-    if score < 0:
+    if score < 0 or score > 100:
         return "Invalid score"
-    elif score >= 50 and score < 90:
-        return "Passable"
-    elif score >= 90 and score <= 100:
+    elif score >= 90:
         return "Excellent"
-    elif score > 100:
-        return "Invalid score"
+    elif score >= 50:
+        return "Passable"
     else:
         return "Bad"
 
