@@ -17,8 +17,8 @@ def main():
             print(confirm_name)
             confirm_name = input(f"Is your name {emails.get(email)}? (Y/N): ").lower()
         if confirm_name == "n":
-            confirm_name = input("Name: ").title()
-            emails[email] = confirm_name
+            new_name = input("Name: ").title()
+            emails[email] = new_name
         email = input("Email: ").lower()
     for email in emails:
         print(f"{emails.get(email)} ({email})")
